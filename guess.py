@@ -1,9 +1,14 @@
 import random
-# Ushbu o'yin foydalanuvchi raqam kiritadi qachonki u yutmagunigacha
-n =  random.randint(0, 10)
+
+n = random.randint(0, 10)
+quess = int(input("guess a number between 0 and 10: ")
+guesses = 0
 
 while True:
-    guess = int(input("guess a number between 1  and 10: "))
-    if guess == n:
-        print("Topdingiz🔥")
-        break
+	if n == guess:
+		print("Topdingingiz!")
+		break
+
+	if guesses >= 3: 
+		print("Yutqazdingiz!"
+		break
